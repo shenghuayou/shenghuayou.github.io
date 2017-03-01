@@ -9,101 +9,123 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
 </head>
-<body>
+
+<script>
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 100);
+    return false;
+});
+</script>
+<body style="padding-top: 30px;color:#777">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid" style="overflow:auto;z-index:-1">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="margin-left:45px;" href="#">Shenghua You</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#projects" class="anchorLink">Projects</a></li>
+      <li><a href="#aboutme" class="anchorLink">About</a></li>
+      <li><a href="#contactme" class="anchorLink">Contact</a></li>
+    </ul>
+  </div>
+</nav>
   
-<div class="container">
+<div class="container" style="margin-top:45px;">
 	<!--profile row--> 
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-sm-4">
 			<div align="center">
-			<img class="my_head" src="/Users/youshenghua/Desktop/shenghuayou.github.io/images/head.png">
+			<img class="my_head" style="margin-left:10%" src="/Users/youshenghua/Desktop/shenghuayou.github.io/images/head.png">
 		</div>
 		</div>
 		<div class="col-sm-8">
-			 <h1>Shenghua You</h1>
-			 <h2>about me bala bala skdfjld fds lfjdls jfds fljdsl fjsdlf sdlfj wejwle jrew rwle jrlwej ll</h2>
-			 <h2>adress infomation sdkfjlsd jfsd jfldsjl fjdsl fdsjf ldsfj dlsjf lsdjlf jdslf </h2>
+			 <h1 class="my_info">Shenghua You</h1>
+			 	<h3 class="my_info">College: The City College of New York</h3>
+			 	<h3 class="my_info">Degree: BS in Computer Science</h3>
+			 	<h3 class="my_info">Github: <a href="https://github.com/shenghuayou">https://github.com/shenghuayou</a></h3>
+			 	<h3 class="my_info">Languages: C++, Python, HTML, CSS</h3> 
+			 	<h3 class="my_info">Objective-C, MySQL
+			 
 		</div>
 	</div>
 
 	<br/>
+	<br/>
+	<br/>
 	
+	<!--About row-->
+	<h2 id="aboutme" style="font-weight: normal;">About</h2>
+	<h4 style="font-weight: normal;"> about me bala bala about me bala bala about me bala bala about me bala bala about me bala bala about me bala bala about me bala bala about me bala bala about me bala bala about me bala bala about me bala bala about me bala balaabout me bala bala about me bala bala about me bala bala about me bala bala about me bala bala about me bala balaabout me bala bala about me bala bala about me bala bala about me bala bala about me bala bala about me bala bala</h4>
 	<!--project row--> 
-	<div class="row">
-		<div class="col-sm-4">
+	<h2 id="projects" style="font-weight: normal;">Projects</h2>
+	<div class="col-sm-6">
+		<div class="row-sm-6">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Link square - iOS logical game</h3>
+						<h3 class="panel-title"><a href="https://github.com/shenghuayou/Link-Square-iOS-Game-Objective-C">Link square - iOS logical game</a></h3>
 					</div>
 					<div align="center" class="panel-body">
-						<img class="my_image" src="https://github.com/shenghuayou/Link-Square-iOS-Game-Objective-C/blob/master/appstore.png">
+						<a href="https://github.com/shenghuayou/Link-Square-iOS-Game-Objective-C"><img class="my_image" src="images/linksquare.png"></a>
 				  </div>
 				</div>
 		</div>
 
-		<div class="col-sm-4">
+		<div class="row-sm-6">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Project2</h3>
+						<h3 class="panel-title"><a href="https://github.com/shenghuayou/social-media-iOS-app">Social media app for iOS</a></h3>
 					</div>
 					<div align="center" class="panel-body">
-						<img src="/Users/youshenghua/Desktop/shenghuayou.github.io/images/bg.jpg">
+						<a href="https://github.com/shenghuayou/social-media-iOS-app"><img class="my_image" src="images/social.jpg"></a>
 					</div>
 				</div>
 		</div>
 
-		<div class="col-sm-4">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Project13</h3>
-					</div>
-					<div align="center" class="panel-body">
-						<img src="/Users/youshenghua/Desktop/shenghuayou.github.io/images/bg.jpg">
-				  </div>
-				</div>
-		</div>
 	</div>
 
 
-	<div class="row">
-		<div class="col-sm-4">
+<div class="col-sm-6">
+		<div class="row-sm-6">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Project4</h3>
+						<h3 class="panel-title"><a href="https://github.com/shenghuayou/nyc-yellow-taxi-prediction">nyc yellow taxi prediction</a></h3>
 					</div>
 					<div align="center" class="panel-body">
-						<img src="/Users/youshenghua/Desktop/shenghuayou.github.io/images/bg.jpg">
+						<a href="https://github.com/shenghuayou/nyc-yellow-taxi-prediction"><img class="my_image" src="images/nyctaxi.png"></a>
 				  </div>
 				</div>
 		</div>
 
-		<div class="col-sm-4">
+		<div class="row-sm-6">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Project5</h3>
+						<h3 class="panel-title"><a href="https://github.com/shenghuayou/music-player-QT-CSC22100">Music player using QT</a></h3>
 					</div>
 					<div align="center" class="panel-body">
-						<img src="/Users/youshenghua/Desktop/shenghuayou.github.io/images/bg.jpg">
+						<a href="https://github.com/shenghuayou/music-player-QT-CSC22100">
+						<img class="my_image" src="images/musicplayer.png">
+					</a>
 					</div>
 				</div>
 		</div>
 
-		<div class="col-sm-4">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Project6</h3>
-					</div>
-					<div align="center" class="panel-body">
-						<img src="/Users/youshenghua/Desktop/shenghuayou.github.io/images/bg.jpg">
-				  </div>
-				</div>
-		</div>
 	</div>
-
-
- 
-
 </div>
+<div class="container">
+<div class="row-sm-12" style="margin-bottom:50px">
+	<h2 id="contactme" style="font-weight: normal;">Contact</h2>
+	<h4 style="font-weight: normal;">Phone: 917-302-0387</h4>
+	<h4 style="font-weight: normal;">Email: shenghuayou@gmail.com</h4>
+	Copyright © Shenghua You 2017
+</div>
+ </div>
+
 
 </body>
+
+
 </html>
