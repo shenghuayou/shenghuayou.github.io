@@ -23,14 +23,21 @@ $('a').click(function(){
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid" style="overflow:auto;z-index:-1">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
       <a class="navbar-brand" style="margin-left:45px;" href="#">Shenghua You</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
       <li><a href="#">Home</a></li>
       <li><a href="#projects" class="anchorLink">Projects</a></li>
       <li><a href="#aboutme" class="anchorLink">About</a></li>
       <li><a href="#contactme" class="anchorLink">Contact</a></li>
     </ul>
+	</div>
   </div>
 </nav>
   
