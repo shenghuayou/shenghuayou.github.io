@@ -22,3 +22,7 @@ img.my_head{
 .container:hover .image {
   opacity: 0.3;
 }
+
+.row-sm-6 img.my_image:hover {
+    opacity: 0.5;
+}
