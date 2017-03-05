@@ -25,14 +25,15 @@ img.my_head{
 
 .row-sm-6 img.my_image:hover {
     opacity: 0.5;
+    box-shadow: 3px 3px 3px #888888;
 }
 
 .my_navbar_color{
   background-color:#F4F4F4;
-  box-shadow: 3px 3px 3px #888888;
+
   border-style: solid;
   border-top-color: #888888;
-  border-width: 3px;
+  border-width: 0px;
 
 
 }
